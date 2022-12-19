@@ -114,23 +114,25 @@ body {
   }
 
   .gallery-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     justify-content: center;
+    /* width: 18em;
+    height: 18em; */
   }
 
   h3.port-head {
     display: block;
     color: black;
     font-size: 2.5rem;
-    margin-left: 120px;
+    margin-left: 4em;
     margin-top: 80px;
     margin-bottom: 20px;
   }
 
   .gallery-item {
-    width: 300px;
-    height: 300px;
+    width: 17rem;
+    height: 17rem;
     flex-shrink: inherit;
     z-index: 10;
   }
@@ -161,7 +163,7 @@ body {
     left: 50%;
     text-align: center;
     color: white;
-    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
     font-size: 24px;
     font-weight: 800;
     pointer-events: none;
@@ -184,9 +186,9 @@ body {
   }
 
   .dali {
-    max-width: 350px;
+    width: 25%;
     flex-wrap: 1 0 0;
-    padding: 30px;
+    padding: 2em;
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -239,6 +241,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     min-height: 100px;
+    position:sticky bottom;
     }
 
   .footer {
